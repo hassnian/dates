@@ -9,7 +9,7 @@ configure({
 });
 
 describe("<Home/>", () => {
-  it("render withouth carshing", () => {
+  it("render withouth crashing", () => {
     const home = shallow(<Home />);
     expect(home.find(SomeList).length).toBe(1);
   });

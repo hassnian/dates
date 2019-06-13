@@ -22,11 +22,13 @@ describe("<SomeList/>", () => {
     const someList = shallow(<SomeList  lista={lista} />);
     someList.find('.name').forEach((node,index) => {
       expect(node.text()).toBe(lista[index].name);
+    
     });
+    expect(someList.find('.name').length).toBe(lista.length);
   });
   
 
-  it("renders  check if date is a date format  li properly when props are passed", () => {
+  it("renders  rendereds  if date is a date format  ", () => {
     const lista=[{name:"Rye",surname:"Lovisa",date:Date.now()},{name:"Lyan",surname:"Maxima",date:Date.now()},{name:"Michelle",surname:"Jowis",date:Date.now()}]      
     const someList = shallow(<SomeList  lista={lista} />);
     someList.find('.date').forEach((node) => {
