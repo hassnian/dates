@@ -4,7 +4,8 @@ import "./Home.css";
 import SomeList from "./SomeList";
 class Home extends React.Component {
   render() {
-    const  lista=[{ name: "ad" }, { name: "asd" }, { name: "asd" }]
+
+    const lista=[{name:"Rye",surname:"Lovisa",date:Date.now()},{name:"Lyan",surname:"Maxima",date:Date.now()},{name:"Michelle",surname:"Jowis",date:Date.now()}]
     return (
       <div className="Home">
         <div className="Home-header">
